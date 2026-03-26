@@ -3,32 +3,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--[if !mso]><!-->
-    <style type="text/css">
-        /*
-         * DARK MODE LOGO SWAP
-         * -------------------
-         * This works in: Apple Mail, iOS Mail, Outlook for Mac, some webmail.
-         * Does NOT work in: Outlook for Windows (Word rendering engine).
-         *
-         * To use:
-         *   1. Host a dark-mode version of each logo (white/light version).
-         *   2. Set the .logo-light img to your normal logo (already done below).
-         *   3. Set the .logo-dark img src to your dark/inverted logo URL.
-         *   4. The CSS below hides/shows the correct one based on color scheme.
-         *
-         * For Outlook for Windows: the light logo always shows (no dark mode support).
-         */
-        @media (prefers-color-scheme: dark) {
-            .logo-light { display: none !important; max-height: 0 !important; overflow: hidden !important; }
-            .logo-dark  { display: block !important; max-height: none !important; overflow: visible !important; }
-
-            /* Same swap for the partner logos row */
-            .partner-logos-light { display: none !important; max-height: 0 !important; overflow: hidden !important; }
-            .partner-logos-dark  { display: block !important; max-height: none !important; overflow: visible !important; }
-        }
-    </style>
-    <!--<![endif]-->
     <!--[if mso]>
     <style type="text/css">
         /* Outlook-specific: force font stack */
@@ -55,29 +29,9 @@
 
                     <!-- LEFT: Hotel logo (223px wide) -->
                     <td valign="top" width="223" style="width:223px; vertical-align:top; padding:0; margin:0;">
-
-                        <!--
-                            DARK MODE SWAP PATTERN FOR MAIN LOGO
-                            - .logo-light = shown in light mode (default)
-                            - .logo-dark  = shown in dark mode (hidden by default)
-                            Replace the src in .logo-dark with your inverted/white logo URL.
-                        -->
-
-                        <!-- Light mode logo (default, always visible in Outlook) -->
-                        <div class="logo-light" style="display:block;">
-                            <img src="https://studiotisina.github.io/SUDAR-E-mail-Signatures/assets/venturo-logo-static.png"
-                                 width="223" height="195" alt="Venturo Boutique Hotel"
-                                 style="display:block; border:0; outline:none; text-decoration:none; width:223px; height:195px; -ms-interpolation-mode:bicubic;">
-                        </div>
-
-                        <!-- Dark mode logo (hidden by default, shown via @media CSS above) -->
-                        <!-- ⚠️  Replace src below with your actual dark-mode logo URL -->
-                        <div class="logo-dark" style="display:none; max-height:0; overflow:hidden;">
-                            <img src="https://studiotisina.github.io/SUDAR-E-mail-Signatures/assets/venturo-logo-static_dark.png"
-                                 width="223" height="195" alt="Venturo Boutique Hotel"
-                                 style="display:block; border:0; outline:none; text-decoration:none; width:223px; height:195px; -ms-interpolation-mode:bicubic;">
-                        </div>
-
+                        <img src="https://studiotisina.github.io/SUDAR-E-mail-Signatures/assets/venturo-logo-static.png"
+                             width="223" height="195" alt="Venturo Boutique Hotel"
+                             style="display:block; border:0; outline:none; text-decoration:none; width:223px; height:195px; -ms-interpolation-mode:bicubic;">
                     </td>
 
                     <!-- Spacer column (replaces padding-left, more reliable in Outlook) -->
@@ -86,7 +40,6 @@
                     <!-- RIGHT: Contact info -->
                     <td valign="middle" style="vertical-align:middle; padding:0; color:#4e2f24; font-family:'Trebuchet MS',Arial,sans-serif; font-size:12px; line-height:16px;">
 
-                        <!-- Name -->
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
                                style="border-collapse:collapse;">
                             <tr>
@@ -136,11 +89,8 @@
                             <!-- Partner logos row -->
                             <tr>
                                 <td style="padding:0;">
-
-                                    <!-- Light mode partner logos (default) -->
                                     <table role="presentation" cellpadding="0" cellspacing="0" border="0"
-                                           class="partner-logos-light"
-                                           style="border-collapse:collapse; display:table;">
+                                           style="border-collapse:collapse;">
                                         <tr>
                                             <td valign="middle" style="vertical-align:middle; padding:0; padding-right:5px;">
                                                 <img src="https://studiotisina.github.io/SUDAR-E-mail-Signatures/assets/design-hotels-logo.png"
@@ -150,31 +100,11 @@
                                             <td valign="middle" style="vertical-align:middle; color:#000000; padding:0 4px; font-family:'Trebuchet MS',Arial,sans-serif; font-size:12px; line-height:16px;">|</td>
                                             <td valign="middle" style="vertical-align:middle; padding:0; padding-left:5px;">
                                                 <img src="https://studiotisina.github.io/SUDAR-E-mail-Signatures/assets/marriot_bonvoy.png"
-                                                     width="70" height="36.77" alt="Marriott Bonvoy"
-                                                     style="display:block; border:0; outline:none; text-decoration:none; width:70px; height: 36.77; -ms-interpolation-mode:bicubic;">
+                                                     width="70" height="37" alt="Marriott Bonvoy"
+                                                     style="display:block; border:0; outline:none; text-decoration:none; width:70px; height:37px; -ms-interpolation-mode:bicubic;">
                                             </td>
                                         </tr>
                                     </table>
-
-                                    <!-- Dark mode partner logos (hidden by default) -->
-                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0"
-                                           class="partner-logos-dark"
-                                           style="border-collapse:collapse; display:none; max-height:0; overflow:hidden;">
-                                        <tr>
-                                            <td valign="middle" style="vertical-align:middle; padding:0; padding-right:5px;">
-                                                <img src="https://studiotisina.github.io/SUDAR-E-mail-Signatures/assets/design-hotels-logo_dark.png"
-                                                     width="100" height="19" alt="A Member of Design Hotels"
-                                                     style="display:block; border:0; outline:none; text-decoration:none; width:100px; height:19px; -ms-interpolation-mode:bicubic;">
-                                            </td>
-                                            <td valign="middle" style="vertical-align:middle; color:#ffffff; padding:0 4px; font-family:'Trebuchet MS',Arial,sans-serif; font-size:12px; line-height:16px;">|</td>
-                                            <td valign="middle" style="vertical-align:middle; padding:0; padding-left:5px;">
-                                                <img src="https://studiotisina.github.io/SUDAR-E-mail-Signatures/assets/marriot_bonvoy_dark.png"
-                                                     width="70" height="36.77" alt="Marriott Bonvoy"
-                                                     style="display:block; border:0; outline:none; text-decoration:none; width:70px; height: 36.77; -ms-interpolation-mode:bicubic;">
-                                            </td>
-                                        </tr>
-                                    </table>
-
                                 </td>
                             </tr>
                         </table>
